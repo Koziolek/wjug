@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29" started-at="2012-01-03T00:56:00Z" finished-at="2012-01-03T00:56:00Z">
+  <suite name="Default suite" duration-ms="25" started-at="2012-01-03T19:00:33Z" finished-at="2012-01-03T19:00:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29" started-at="2012-01-03T00:56:00Z" finished-at="2012-01-03T00:56:00Z">
+    <test name="Default test" duration-ms="25" started-at="2012-01-03T19:00:33Z" finished-at="2012-01-03T19:00:33Z">
       <class name="pl.koziolekweb.wjug.guice.base.WładysławTest">
-        <test-method status="PASS" signature="testWładysław()[pri:0, instance:pl.koziolekweb.wjug.guice.base.WładysławTest@2f87c55c]" name="testWładysław" duration-ms="13" started-at="2012-01-03T00:56:00Z" finished-at="2012-01-03T00:56:00Z">
+        <test-method status="PASS" signature="testWładysław()[pri:0, instance:pl.koziolekweb.wjug.guice.base.WładysławTest@5d3e754f]" name="testWładysław" duration-ms="12" started-at="2012-01-03T19:00:33Z" finished-at="2012-01-03T19:00:33Z">
         </test-method>
       </class>
     </test>

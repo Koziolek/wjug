@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="wjug">
+    <test name="base">
+        <packages>
+            <package name="pl.koziolekweb.wjug.guice.base" /> 
+        </packages>
+    </test>
+</suite>

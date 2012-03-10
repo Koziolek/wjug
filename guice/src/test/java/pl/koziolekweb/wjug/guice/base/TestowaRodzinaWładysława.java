@@ -11,7 +11,7 @@ public class TestowaRodzinaWładysława extends AbstractModule {
 		install(new FactoryModuleBuilder().implement(Osoba.class,
 				Władysław.class).build(WładysławFactory.class));
 		bind(String.class).annotatedWith(Names.named("Władysław")).toInstance(
-				"Władysław");
+				"Władysław");bind(Osoba.class).to(Władysław.class);
 		bind(Osoba.class).annotatedWith(Mama.class).toInstance(new Osoba() {
 
 			@Override
