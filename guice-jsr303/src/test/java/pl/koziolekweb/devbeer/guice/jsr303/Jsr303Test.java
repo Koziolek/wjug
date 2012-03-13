@@ -29,5 +29,10 @@ public class Jsr303Test {
 			super();
 			this.name = name;
 		}
+
+		@Override
+		public String toString() {
+			return name;
+		}
 	}
 }
