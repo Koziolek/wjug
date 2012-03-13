@@ -1,7 +1,6 @@
 package pl.koziolekweb.devbeer.guice.jsr303;
 
 import javax.validation.ConstraintValidatorFactory;
-import javax.validation.MessageInterpolator;
 import javax.validation.Validator;
 
 import com.google.inject.AbstractModule;
@@ -15,10 +14,6 @@ public class Jsr303 extends AbstractModule {
 				ConstraintValidatorFactory.class,
 				ConstraintValidatorFactoryWrapper.class).build(
 				ConstraintValidatorFactoryWrapperFactory.class));
-		install(new FactoryModuleBuilder().implement(
-				MessageInterpolator.class,
-				MessageInterpolatorWrapper.class).build(
-				MessageInterpolatorWrapperFactory.class));
 		// bind(ConstraintValidatorFactory.class).toProvider(ConstraintValidatorFactoryProvider.class);
 	}
 

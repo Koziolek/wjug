@@ -1,6 +1,9 @@
 package pl.koziolekweb.devbeer.guice.jsr303;
 
+import java.util.Set;
+
 import javax.inject.Inject;
+import javax.validation.ConstraintViolation;
 import javax.validation.Validator;
 import javax.validation.constraints.NotNull;
 
@@ -17,12 +20,16 @@ public class Jsr303Test {
 	@Test
 	public void shouldConfigureBuildValidator() {
 		assertNotNull(validator);
-		assertEquals(validator.validate(new Person("")).size(), 0);
-		assertEquals(validator.validate(new Person(null)).size(), 1);
+		assertEquals(validator.validate(new Person("Adam")).size(), 0);
+		Set<ConstraintViolation<Person>> invalidPerson = validator
+				.validate(new Person(null));
+		assertEquals(invalidPerson.size(), 2);
+		
 	}
 
 	class Person {
 		@NotNull
+		@Adam
 		private final String name;
 
 		public Person(String name) {
