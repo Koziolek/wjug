@@ -6,7 +6,7 @@ import javax.validation.ConstraintValidatorContext;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
-class AdamValidator implements ConstraintValidator<Adam, String> {
+public class AdamValidator implements ConstraintValidator<Adam, String> {
 
 	@Mock
 	private Object mock;
@@ -20,5 +20,5 @@ class AdamValidator implements ConstraintValidator<Adam, String> {
 	public boolean isValid(String value, ConstraintValidatorContext context) {
 		return "Adam".equals(value);
 	}
-	
+
 }
