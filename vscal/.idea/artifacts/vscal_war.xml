@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="vscal:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="vscal-1.0-SNAPSHOT.war">
-      <element id="artifact" artifact-name="vscal:war exploded" />
-    </root>
-  </artifact>
-</component>
